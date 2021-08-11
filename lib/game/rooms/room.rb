@@ -8,6 +8,11 @@ module Game
         @sides = {}
       end
 
+      def post_initialize(args = {})
+        @number = args[:args]
+        @sides = {}
+      end
+
       def get_side(direction)
         sides[direction]
       end

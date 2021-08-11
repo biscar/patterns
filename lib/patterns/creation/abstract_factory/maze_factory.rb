@@ -2,6 +2,15 @@ module Patterns
   module Creation
     module AbstractFactory
       class MazeFactory
+
+        def initialize(args = {})
+          post_initialize(args)
+        end
+
+        def post_initialize(args = {})
+          nil
+        end
+
         def make_maze
           Game::Maze.new
         end

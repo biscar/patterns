@@ -4,6 +4,13 @@ module Game
       def initialize(args = {})
         @room1 = args[:room1]
         @room2 = args[:room2]
+
+        post_initialize(args)
+      end
+
+      def post_initialize(args = {})
+        @room1 = args[:room1]
+        @room2 = args[:room2]
       end
 
       def other_side_from(room)
