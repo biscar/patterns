@@ -1,6 +1,6 @@
 require 'unit/test_helper'
 
-class AbstractFactoryTest < MiniTest::Test
+class BuilderTest < MiniTest::Test
   def setup
     @game = Patterns::Creation::Builder::MazeGame
   end
