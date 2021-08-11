@@ -1,7 +1,7 @@
 module Game
   module Rooms
     class Room < Game::MapSite
-      attr_reader :number
+      attr_reader :number, :sides
 
       def initialize(args = {})
         @number = args[:number]
@@ -16,9 +16,6 @@ module Game
         sides[direction] = map_site
       end
 
-      private
-
-      attr_reader :sides
     end
   end
 end
