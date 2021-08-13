@@ -1,4 +1,4 @@
 module Computer
-  class Cabinet < Computer::CompositeEquipment
+  class Cabinet < Patterns::Structural::Composite::CompositeEquipment
   end
 end
