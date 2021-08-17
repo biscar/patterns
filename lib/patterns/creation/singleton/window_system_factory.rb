@@ -10,9 +10,9 @@ module Patterns
           self.factory =
             case ENV['WINDOWSTYLE']
             when 'pm'
-              Patterns::Creation::AbstractFactory::PmWindowFactory.new
+              WindowUi::Factories::PmWindowFactory.new
             when 'x'
-              Patterns::Creation::AbstractFactory::XWindowFactory.new
+              WindowUi::Factories::XWindowFactory.new
             end
         end
 
