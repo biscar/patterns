@@ -20,7 +20,7 @@ module WindowUi
     protected
 
     def window_imp
-      Patterns::Creation::Singleton::WindowSystemFactory.instance.make_window_imp
+      WindowUi::Singleton::WindowSystemFactory.instance.make_window_imp
     end
 
     def view

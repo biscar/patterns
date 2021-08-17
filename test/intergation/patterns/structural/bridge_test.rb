@@ -2,7 +2,7 @@ require 'unit/test_helper'
 
 class BridgeTest < MiniTest::Test
   def setup
-    Singleton.__init__(Patterns::Creation::Singleton::WindowSystemFactory)
+    Singleton.__init__(WindowUi::Singleton::WindowSystemFactory)
   end
 
   def test_pm_window
