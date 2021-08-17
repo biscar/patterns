@@ -1,23 +1,22 @@
 require 'unit/test_helper'
 
 class FactoryMethodTest < MiniTest::Test
-
   def test_maze_game
-    maze = Patterns::Creation::FactoryMethod::MazeGame
+    maze = Game::FactoryMethod::MazeGame
     game = maze.create_maze
 
     assert_instance_of(Game::Maze, game)
   end
 
   def test_bombed_maze_game
-    maze = Patterns::Creation::FactoryMethod::BombedMazeGame
+    maze = Game::FactoryMethod::BombedMazeGame
     game = maze.create_maze
 
     assert_instance_of(Game::Maze, game)
   end
 
   def test_enchanted_maze_game
-    maze = Patterns::Creation::FactoryMethod::EnchantedMazeGame
+    maze = Game::FactoryMethod::EnchantedMazeGame
     game = maze.create_maze
 
     assert_instance_of(Game::Maze, game)
