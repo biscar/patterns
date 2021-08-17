@@ -1,4 +1,4 @@
 module Computer
-  class Chassis < Patterns::Structural::Composite::CompositeEquipment
+  class Chassis < Computer::Composite::CompositeEquipment
   end
 end
