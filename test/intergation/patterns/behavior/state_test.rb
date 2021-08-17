@@ -1,7 +1,7 @@
 require 'unit/test_helper'
 
-class ObserverTest < MiniTest::Test
-  def test_observer
+class StateTest < MiniTest::Test
+  def test_state
     connection = Tcp::TcpConnection.new
     assert_kind_of(Tcp::TcpClosed, connection.state)
 
