@@ -12,11 +12,11 @@ module Patterns
           @factory =
             case ENV['MAZESTYLE']
             when 'bombed'
-              Patterns::Creation::AbstractFactory::BombedMazeFactory.new
+              Game::Factories::BombedMazeFactory.new
             when 'enchanted'
-              Patterns::Creation::AbstractFactory::EnchantedMazeFactory.new
+              Game::Factories::EnchantedMazeFactory.new
             else
-              Patterns::Creation::AbstractFactory::MazeFactory.new
+              Game::Factories::MazeFactory.new
             end
         end
       end

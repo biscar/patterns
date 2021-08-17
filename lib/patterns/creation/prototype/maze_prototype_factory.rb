@@ -1,7 +1,7 @@
 module Patterns
   module Creation
     module Prototype
-      class MazePrototypeFactory < Patterns::Creation::AbstractFactory::MazeFactory
+      class MazePrototypeFactory < Game::Factories::MazeFactory
 
         def post_initialize(args = {})
           @prototype_maze = args[:maze]

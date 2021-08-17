@@ -10,8 +10,8 @@ class SingletonTest < MiniTest::Test
 
     singleton = Patterns::Creation::Singleton::MazeFactory.instance
 
-    assert_instance_of(Patterns::Creation::AbstractFactory::BombedMazeFactory, singleton.factory)
-    maze = Patterns::Creation::AbstractFactory::MazeGame.create_maze(singleton.factory)
+    assert_instance_of(Game::Factories::BombedMazeFactory, singleton.factory)
+    maze = Game::Factories::MazeGame.create_maze(singleton.factory)
 
     assert_instance_of(Game::Maze, maze)
   end
@@ -21,8 +21,8 @@ class SingletonTest < MiniTest::Test
 
     singleton = Patterns::Creation::Singleton::MazeFactory.instance
 
-    assert_instance_of(Patterns::Creation::AbstractFactory::EnchantedMazeFactory, singleton.factory)
-    maze = Patterns::Creation::AbstractFactory::MazeGame.create_maze(singleton.factory)
+    assert_instance_of(Game::Factories::EnchantedMazeFactory, singleton.factory)
+    maze = Game::Factories::MazeGame.create_maze(singleton.factory)
 
     assert_instance_of(Game::Maze, maze)
   end

@@ -2,11 +2,11 @@ require 'unit/test_helper'
 
 class AbstractFactoryTest < MiniTest::Test
   def setup
-    @game = Patterns::Creation::AbstractFactory::MazeGame
+    @game = Game::Factories::MazeGame
   end
 
   def test_bombed_maze_factory
-    maze = @game.create_maze(Patterns::Creation::AbstractFactory::BombedMazeFactory.new)
+    maze = @game.create_maze(Game::Factories::BombedMazeFactory.new)
 
     assert_instance_of(Game::Maze, maze)
 
@@ -15,7 +15,7 @@ class AbstractFactoryTest < MiniTest::Test
   end
 
   def test_enchanted_maze_factory
-    maze = @game.create_maze(Patterns::Creation::AbstractFactory::EnchantedMazeFactory.new)
+    maze = @game.create_maze(Game::Factories::EnchantedMazeFactory.new)
 
     assert_instance_of(Game::Maze, maze)
 
@@ -24,7 +24,7 @@ class AbstractFactoryTest < MiniTest::Test
   end
 
   def test_maze_factory
-    maze = @game.create_maze(Patterns::Creation::AbstractFactory::MazeFactory.new)
+    maze = @game.create_maze(Game::Factories::MazeFactory.new)
 
     assert_instance_of(Game::Maze, maze)
 

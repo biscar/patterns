@@ -6,7 +6,7 @@ class PrototypeTest < MiniTest::Test
     prototype = Patterns::Creation::Prototype::MazePrototypeFactory.new(maze: Game::Maze.new, wall: Game::Walls::Wall.new,
       door: Game::Doors::Door.new, room: Game::Rooms::Room.new)
 
-    game = Patterns::Creation::AbstractFactory::MazeGame.create_maze(prototype)
+    game = Game::Factories::MazeGame.create_maze(prototype)
 
     assert_instance_of(Game::Maze, game)
   end
@@ -15,7 +15,7 @@ class PrototypeTest < MiniTest::Test
     prototype = Patterns::Creation::Prototype::MazePrototypeFactory.new(maze: Game::Maze.new, wall: Game::Walls::BombedWall.new,
       door: Game::Doors::Door.new, room: Game::Rooms::RoomWithABomb.new)
 
-    game = Patterns::Creation::AbstractFactory::MazeGame.create_maze(prototype)
+    game = Game::Factories::MazeGame.create_maze(prototype)
 
     assert_instance_of(Game::Maze, game)
   end
