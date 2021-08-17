@@ -1,5 +1,5 @@
 module Help
-  class Widget < Patterns::Behavior::ChainOfResponsibility::HelpHandler
+  class Widget < Help::HelpHandler
     def post_initialize(args = {})
       @parent = @successor
     end

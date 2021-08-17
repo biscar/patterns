@@ -1,5 +1,5 @@
 module Help
-  class Application < Patterns::Behavior::ChainOfResponsibility::HelpHandler
+  class Application < Help::HelpHandler
     def handle_help
       'показать список разделов справки'
     end
