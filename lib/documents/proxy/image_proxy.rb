@@ -1,8 +1,8 @@
 module Documents
   module Proxy
     class ImageProxy < Documents::Graphic
-      def post_initialize(params = {})
-        @file_name = params[:image_file]
+      def post_initialize(args = {})
+        @file_name = args[:image_file]
       end
 
       def get_image

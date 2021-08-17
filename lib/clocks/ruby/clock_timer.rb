@@ -5,8 +5,8 @@ module Clocks
     class ClockTimer
       include Observable
 
-      def post_initialize(params = {})
-        @time = params.fetch(:time, Time.now)
+      def post_initialize(args = {})
+        @time = args.fetch(:time, Time.now)
       end
 
       def get_hour
