@@ -1,6 +1,6 @@
 require 'unit/test_helper'
 
-class CommandTest < MiniTest::Test
+class MediatorTest < MiniTest::Test
   def test_mediator
     director = Dialog::Mediators::FontDialogDirector.new
     director.create_widgets
