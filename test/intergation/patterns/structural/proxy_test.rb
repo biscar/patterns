@@ -5,7 +5,7 @@ class FlyweightTest < MiniTest::Test
     path = File.join('test/files/proxy.png')
 
     text = Documents::TextDocument.new
-    image = Patterns::Structural::Proxy::ImageProxy.new(image_file: path)
+    image = Documents::Proxy::ImageProxy.new(image_file: path)
 
     text.insert(image)
 

@@ -6,18 +6,18 @@ module Editor
 
     def create_character(char)
       if !character[char]
-        character[char] = Patterns::Structural::Flyweight::Character.new(char: char)
+        character[char] = Editor::Flyweight::Character.new(char: char)
       end
 
       character[char]
     end
 
     def create_row
-      Patterns::Structural::Flyweight::Row.new
+      Editor::Flyweight::Row.new
     end
 
     def create_column
-      Patterns::Structural::Flyweight::Column.new
+      Editor::Flyweight::Column.new
     end
 
     private

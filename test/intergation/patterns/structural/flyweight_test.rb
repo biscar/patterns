@@ -7,7 +7,7 @@ class FlyweightTest < MiniTest::Test
     factory = Editor::GlyphFactory.new
     text.each_char { |char| factory.create_character(char) }
 
-    gc = Patterns::Structural::Flyweight::GlyphContext.new
+    gc = Editor::Flyweight::GlyphContext.new
 
     times12 = Editor::Font.new('Times-Roman-12')
     times_italic12 = Editor::Font.new('Times-Italic-12')
