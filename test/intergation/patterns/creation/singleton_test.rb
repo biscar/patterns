@@ -16,7 +16,7 @@ class SingletonTest < MiniTest::Test
     assert_instance_of(Game::Maze, maze)
   end
 
-  def test_bombed_maze
+  def test_enchanted_maze
     ENV['MAZESTYLE'] = 'enchanted'
 
     singleton = Game::Singleton::MazeFactory.instance
