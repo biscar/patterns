@@ -1,6 +1,6 @@
 module Computer
   module Composite
-    class CompositeEquipment < Computer::Equipment
+    class CompositeEquipment < Computer::Equipments::Equipment
       def post_initialize(args = {})
         @equipments = []
       end
