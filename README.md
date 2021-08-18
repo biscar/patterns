@@ -1,6 +1,11 @@
 OOP Patterns
 ============
 
+Примеры на ruby из книги Приемы объектно-ориентированного проектирования.
+
+![screenshot of sample](./public/images/patterni_projectorovania.jpg)
+
+
 ### Creational - Пораждающие паттерны 
 * [Abstract Factory(Абстрактная фабрика)](#af)
 * [Builder(Строитель)](#bui)
